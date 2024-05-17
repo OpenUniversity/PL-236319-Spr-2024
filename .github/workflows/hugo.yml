@@ -1,29 +1,31 @@
 name: Build and Deploy
 
 on:
-   push:
-        branches:
-        - master  # Change this to the branch you want to trigger the workflow on
+          push:
+                      branches:
+                                    - master  # Change this to the branch you want to trigger the workflow on
 
-        jobs:
-    build:
-         runs-on: ubuntu-latest
+                      jobs:
+                                build:
+                                            runs-on: ubuntu-latest
 
-      steps:
-             - name: Checkout Repository
-         uses: actions/checkout@v2
+                                                steps:
+                                                              - name: Checkout Repository
+                                                                        uses: actions/checkout@v2
 
-               - name: Setup Hugo
-           uses: peaceiris/actions-hugo@v2
-            with:
-                hugo-version: 'latest'
+                                                                              - name: Setup Hugo
+                                                                                        uses: peaceiris/actions-hugo@v2
+                                                                                                with:
+                                                                                                                  hugo-version: 'latest'
 
-               - name: Build Site
-                  run: hugo --minify
+                                                                                                                        - name: Build Site
+                                                                                                                                  run: hugo --minify
 
-                 - name: Deploy to GitHub Pages
-                    uses: peaceiris/actions-gh-pages@v3
-                     with:
-                         deploy_key: ${{ secrets.GITHUB_TOKEN }}
-                            publish_dir: ./public
-                        publish_branch: gh-pages  # Change this to the branch you want to deploy to
+                                                                                                                                        - name: Deploy to GitHub Pages
+                                                                                                                                                  uses: peaceiris/actions-gh-pages@v3
+                                                                                                                                                          with:
+                                                                                                                                                                            deploy_key: ${{ secrets.GITHUB_TOKEN }}
+                                                                                                                                                                                      publish_dir: ./public
+                                                                                                                                                                                                publish_branch: gh-pages  # Change this to the branch you want to deploy to
+
+
