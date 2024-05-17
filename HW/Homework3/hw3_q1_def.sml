@@ -1,1 +1,0 @@
-fun toChar false = #" " | toChar true = #"*"

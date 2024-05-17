@@ -1,7 +1,0 @@
-use_module(library(yall)).
-print("===TEST START===").
-
-once(add(R,s(s(bot)),s(s(s(s(s(bot))))))).
-
-once(multiply(s(s(bot)),s(bot),Res)).
-once(power(s(s(s(bot))),s(s(bot)),Res)).

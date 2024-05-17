@@ -1,6 +1,0 @@
-print "===TEST START===\n";
-val test1 = if (mapState (fn true => 1 | false => 0) [[false, true, false], [true, false, true]]) = [[0, 1, 0], [1, 0, 1]] then "PASSED" else "FAILED";
-val test2 = if (toString (explode "Hello world")) = "Hello world" then "PASSED" else "FAILED";
-val test3 = if (frameToState [" * ", "* *"]) = [[false, true, false], [true, false, true]] then "PASSED" else "FAILED";
-val test4 = if (stateToFrame [[false, true, false], [true, false, true]]) = [" * ", "* *"]then "PASSED" else "FAILED";
-val test5 = printFrame [" * ", "* *"];

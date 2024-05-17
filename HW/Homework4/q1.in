@@ -1,6 +1,0 @@
-print "===TEST START===\n";
-val test1 = if (runCycle [" *** ", " * * ", " *** "]) = [" * * ","*   *"," * * "] then "PASSED" else "FAILED";
-val game = gameOfLife [" *** ", " * * ", " *** "];
-game();
-game();
-game();

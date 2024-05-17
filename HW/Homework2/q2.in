@@ -1,5 +1,0 @@
-print "===TEST START===\n";
-curry op*;
-val test_1 = if 12 = it 3 4 then "Passed" else "Failed";
-uncurry it;
-val test_2 = if 12 = it (3,4) then "Passed" else "Failed";

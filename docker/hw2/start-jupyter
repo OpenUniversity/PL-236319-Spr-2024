@@ -1,8 +1,0 @@
-jupyter-lab --allow-root \
-    --ServerApp.ip='0.0.0.0' \
-    --ServerApp.token='' \
-    --ServerApp.password='' \
-    --ServerApp.allow_origin='*' \
-    --ServerApp.disable_check_xsrf=True \
-    --no-browser \
-    --ServerApp.port=16788

@@ -1,4 +1,0 @@
-val it = () : unit
-val it = [0,1,2] : int list
-val it = Br (0,Br (2,Nil,Nil),Br (4,Nil,Nil)) : int tree
-

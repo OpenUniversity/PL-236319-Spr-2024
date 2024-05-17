@@ -1,3 +1,0 @@
-print "===TEST START===\n";
-val test_1 = if alive = is_alive (alive, empty, empty) (empty, alive, alive) (empty, empty, empty) then "Passed" else "Failed";
-val test_2 = if empty = is_alive (alive, alive, alive) (empty, alive, empty) (alive, alive, alive) then "Passed" else "Failed";

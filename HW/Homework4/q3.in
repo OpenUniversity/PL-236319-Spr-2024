@@ -1,8 +1,0 @@
-val s = ref (new (counter ()));
-
-print "===TEST START===\n";
-s := next (!s);
-s := next (!s);
-s := prev (!s);
-s := next (!s);
-s := next (!s);

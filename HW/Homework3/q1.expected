@@ -1,9 +1,0 @@
-val it = () : unit
-val test1 = "PASSED" : string
-val test2 = "PASSED" : string
-val test3 = "PASSED" : string
-val test4 = "PASSED" : string
- * 
-* *
-val test5 = () : unit
-

@@ -1,6 +1,0 @@
-val it = () : unit
-val it = fn : int -> int -> int
-val test_1 = "Passed" : string
-val it = fn : int * int -> int
-val test_2 = "Passed" : string
-- 
