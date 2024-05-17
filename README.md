@@ -1,4 +1,4 @@
-# Programming Languages Course
+# Programming Languages Course.
 
 ## [SML](./Material/Tutorials/sml/)
 
